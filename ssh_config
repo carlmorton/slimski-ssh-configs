@@ -1,0 +1,115 @@
+#ALL OTHER HOSTS
+ Host *
+   SendEnv LANG LC_*
+   IdentitiesOnly yes
+
+#SLIMSKI-WORK
+Host SLIMSKI-WORK-PUB
+HostName 91.143.78.222
+user carl
+port 1410
+IdentityFile ~/.ssh/slimski_work_rsa
+
+#SLIMSKI-WORK
+Host SLIMSKI-WORK-PRI
+HostName 10.5.2.70
+user carl
+port 1410
+IdentityFile ~/.ssh/slimski_work_rsa
+
+#PUBLIC LJS MANAGEMENT SERVER LOGIN
+Host LJS-MSRV-PUB
+HostName 91.143.78.222
+User carlm
+Port 15856
+IdentityFile ~/.ssh/ljs_msrv_rsa
+
+#PRIVATE LJS MANAGEMENT SERVER LOGIN
+Host LJS-MSRV-PRI
+HostName 10.5.2.202
+User carlm
+Port 15856
+IdentityFile ~/.ssh/ljs_msrv_rsa
+
+#SLIMSKI-UBS LOGIN
+Host SLIMSKI-UBS
+HostName 10.211.55.11
+User carl
+IdentityFile ~/.ssh/slimski_us_rsa
+
+#SLIMSKI-UBD LOGIN
+Host SLIMSKI-UBD
+HostName 10.211.55.10
+User carl
+IdentityFile ~/.ssh/slimski_ud_rsa
+
+#CN3-RAD-AUTH
+Host CN3-RAD-AUTH
+HostName 80.87.23.12
+User carl
+IdentityFile ~/.ssh/cn3_rad_auth_rsa
+
+#CN3-RAD-PROXY
+Host CN3-RAD-PROXY
+HostName 80.87.23.11
+User carl
+IdentityFile ~/.ssh/cn3_rad_proxy_rsa
+
+#CN3-RAD-HOST
+Host CN3-RAD-HOST
+HostName 80.87.23.2
+User carl
+Port 1410
+IdentityFile ~/.ssh/cn3_rad_host_rsa
+
+#CN4-RAD-HOST
+Host CN4-RAD-HOST
+HostName 80.87.30.210
+User carl
+Port 1410
+IdentityFile ~/.ssh/cn4_rad_host_rsa
+
+#WSG-COR-R1
+Host WSG-COR-R1
+Hostname 80.87.18.35
+port 3000
+
+#WSG-COR-R2
+Host WSG-COR-R2
+Hostname 80.87.18.35
+port 3001
+
+#VEOLIA-MP-S1
+host VEOLIA-MP-S1
+hostname 80.87.18.202
+user admin
+port 3000                                                                                      
+
+#VEOLIA-THE-S1
+host VEOLIA-THE-S1
+hostname 80.87.17.214
+user admin
+port 3000
+
+#AKER
+Host aker
+Hostname aker.2i3.net
+user carlm
+
+#AQUILLO
+Host aquillo
+Hostname 80.87.16.60
+user root
+
+#EINSTEIN
+Host einstein
+Hostname einstein.2i3.net
+user root
+
+#NEWTON
+Host newton
+Hostname 87.236.128.54
+
+# XAuthLocation added by XQuartz (http://xquartz.macosforge.org)
+Host *
+    XAuthLocation /opt/X11/bin/xauth
